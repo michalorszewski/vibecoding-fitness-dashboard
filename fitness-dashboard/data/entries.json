@@ -1,0 +1,52 @@
+[
+    {
+        "date": "2023-10-01",
+        "workedOut": true,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-02",
+        "workedOut": false,
+        "healthyEating": false
+    },
+    {
+        "date": "2023-10-03",
+        "workedOut": true,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-04",
+        "workedOut": true,
+        "healthyEating": false
+    },
+    {
+        "date": "2023-10-05",
+        "workedOut": false,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-06",
+        "workedOut": true,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-07",
+        "workedOut": false,
+        "healthyEating": false
+    },
+    {
+        "date": "2023-10-08",
+        "workedOut": true,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-09",
+        "workedOut": false,
+        "healthyEating": true
+    },
+    {
+        "date": "2023-10-10",
+        "workedOut": true,
+        "healthyEating": false
+    }
+]

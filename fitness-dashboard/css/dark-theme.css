@@ -1,0 +1,27 @@
+:root {
+    color-scheme: dark;
+    --bg: #141615;
+    --surface: #1b1d1b;
+    --input: #191b19;
+    --text: #eef0ea;
+    --muted: #9a9e97;
+    --faint: #7e857b;
+    --border: #2b2e2a;
+    --border-strong: #383d35;
+    --hover: #242821;
+    --lime: #c7f36b;
+    --lime-soft: #c7f3120f;
+    --mint: #79d8bb;
+    --peach: #efb78e;
+    --rose: #e9949c;
+    --lavender: #b7b2e3;
+    --ink: #1c2611;
+}
+body { background: var(--bg); color: var(--text); }
+.sidebar { background: #171917; }
+.lime { background: #c7f36b10; color: var(--lime); }
+.mint { background: #79d8bb10; color: var(--mint); }
+.peach { background: #efb78e10; color: var(--peach); }
+.lavender { background: #b7b2e310; color: var(--lavender); }
+.lime-bg { background: var(--lime); }.mint-bg { background: var(--mint); }.peach-bg { background: var(--peach); }.rose-bg { background: var(--rose); }
+::selection { background: var(--lime); color: var(--ink); }
