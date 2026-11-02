@@ -25,16 +25,14 @@ Otwórz `index.html` w przeglądarce. Strona działa bez budowania projektu. Dos
 
 ## Publikacja na GitHub Pages
 
-Nie potrzeba Node.js ani lokalnego Gita. Projekt musi znajdować się w katalogu głównym repozytorium: plik `index.html` obok folderów `css`, `js` i `.github`.
+Repozytorium trzyma aplikację w folderze `fitness-dashboard/`. Workflow w głównym `.github/workflows/pages.yml` publikuje zawartość tego folderu po każdym pushu do `main`. Nie wymaga Node.js ani etapu budowania.
 
-1. Na GitHub utwórz publiczne repozytorium, np. `fitness-dashboard`.
-2. Przez **Add file → Upload files** wgraj zawartość folderu `fitness-dashboard`, nie sam folder nadrzędny. Zatwierdź pliki w gałęzi `main`.
-3. Najprostsza publikacja: **Settings → Pages → Build and deployment → Deploy from a branch**, gałąź **main**, folder **/(root)**, następnie **Save**.
-4. Po ukończeniu wdrożenia adres pojawi się w **Settings → Pages**. Zwykle ma postać `https://TWOJ-LOGIN.github.io/fitness-dashboard/`.
+1. W repozytorium otwórz **Settings → Pages**.
+2. W sekcji **Build and deployment** wybierz **GitHub Actions** jako źródło.
+3. Zatwierdź i wypchnij zmiany do `main`. Przebieg wdrożenia sprawdzisz na karcie **Actions**.
+4. Po udanym wdrożeniu adres strony pojawi się w **Settings → Pages**. Zwykle ma postać `https://TWOJ-LOGIN.github.io/NAZWA-REPO/`.
 
-Alternatywnie wybierz **GitHub Actions** jako źródło Pages. Dołączony `.github/workflows/pages.yml` wdraża stronę po zmianach w `main` lub po ręcznym uruchomieniu. Workflow musi być wgrany także wtedy, gdy system ukrywa folder `.github`. Wybierz tylko jeden sposób publikacji.
-
-Jeśli umieścisz projekt jako podfolder większego repozytorium, przenieś workflow do głównego `.github/workflows` i zmień `path: .` w kroku upload na `path: fitness-dashboard`.
+Workflow nie publikuje `data/entries.json`, czyli przykładowego pliku danych z szablonu. GitHub Pages wymaga odpowiedniego planu dla repozytorium prywatnego; jeśli konfiguracja lub wdrożenie zgłosi problem z dostępnością Pages, sprawdź ustawienia widoczności repozytorium i plan konta. Ten workflow nie zmienia widoczności repozytorium.
 
 ## Prywatność i kopie danych
 
